@@ -1,4 +1,5 @@
 import os
+import strealit as st
 from uuid import uuid4
 from pathlib import Path
 from dotenv import load_dotenv
@@ -13,8 +14,7 @@ from bs4 import BeautifulSoup
 
 import warnings
 warnings.filterwarnings("ignore")
-
-load_dotenv()
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 CHUNK_SIZE = 1000
 COLLECTION_NAME = "real_estate"
@@ -30,7 +30,7 @@ def initialize_components():
 
     if llm is None:
         llm = ChatGroq(
-            api_key = os.getenv("GROQ_API_KEY"),
+            api_key = st.secrets.get("GROQ_API_KEY"),
             model = 'llama-3.3-70b-versatile',
             temperature = 0.9,
             max_tokens = 500
