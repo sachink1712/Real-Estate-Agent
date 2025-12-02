@@ -30,7 +30,3 @@ The system scrapes real estate-related articles from the web, stores them in a v
 | Document Loader | WebBaseLoader |
 | Language | Python 3.11 |
 
----
-
-## 📦 Project Structure
-
