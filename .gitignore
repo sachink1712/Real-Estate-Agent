@@ -1,0 +1,21 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+
+# VSCode configs
+.vscode/
+
+# Local DB and cache
+vector_db/
+
+# Environment variables
+.env
+
+# Python version manager
+.python-version
+
+# Lock files (optional)
+uv.lock
