@@ -1,5 +1,5 @@
 import os
-import strealit as st
+import streamlit as st
 from uuid import uuid4
 from pathlib import Path
 from dotenv import load_dotenv
